@@ -8,17 +8,39 @@ client = genai.Client(
 response = client.models.generate_content(
     model="gemini-3.5-flash",
     contents="""
-仕事効率化に関するブログ記事を書いてください。
+あなたはSEOに強いITブロガーです。
+
+Microsoft 365 Copilot
+Teams
+Outlook
+Excel
+Word
+PowerPoint
+
+に関するブログ記事を書いてください。
 
 条件
 ・HTML形式
-・h2とh3を使う
-・箇条書きを使う
-・2000文字以上
-・初心者向け
+・h2とh3を使用
+・箇条書きを使用
+・2500文字以上
 ・SEOを意識
-・結論→理由→具体例→まとめ
+・初心者向け
+・タイトルを作成
+・まとめを入れる
+・毎回異なるテーマを選ぶ
+・実務で使える内容にする
+topics = [
+    "Microsoft 365 Copilot",
+    "Teams",
+    "Outlook",
+    "Excel",
+    "Word",
+    "PowerPoint"
+]
+
 """
+
 
 )
 
